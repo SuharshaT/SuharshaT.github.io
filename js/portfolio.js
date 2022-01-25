@@ -10,6 +10,18 @@ function navigation(page){
     next[0].className = "current"; 
 }
 
+function change(element){
+    nextId = element.id;
+    var selected = document.getElementsByClassName("selected");
+    var selectedId = selected[0].id;
+    selected[0].className = "";
+    element.className = "selected";
+    var visible = document.getElementsByClassName("visible");
+    var invisible = document.getElementsByClassName(nextId);
+    visible[0].className = selectedId;
+    invisible[0].className = "visible"; 
+}
+
 window.onload = unhide;
 
 function unhide(){

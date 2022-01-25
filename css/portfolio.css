@@ -18,6 +18,11 @@ header{
     margin-top: 4vh;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
 nav a{
     font-size: clamp(12px, 3vh, 18px);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
@@ -38,7 +43,14 @@ nav a:first-child{
     margin-right: 4.5vw;
 }
 
-.active{
+h2 a{
+    opacity: 0.8;
+    transition: opacity 1s;
+    font-weight: 100;
+    margin-right: 4vw;
+}
+
+.active, .selected{
     opacity: 1;
     font-weight: 800;
 }
@@ -96,11 +108,15 @@ nav a:first-child{
     animation-duration: 2s;
 }
 
+.visible{
+    display: block;
+}
+
 #start{
     overflow: hidden;
 }
 
-.Welcome, .About, .Hobbies, .Contact{
+.Welcome, .About, .Hobbies, .Contact, .Education, .Experience{
     display: none;
 }
 
@@ -140,8 +156,5 @@ a img{
     width: clamp(10px, 15vw, 140px);
 }
 
-.clicked{
-    display: none;
-}
 
 
