@@ -7,5 +7,13 @@ function navigation(page){
     var current = document.getElementsByClassName("current");
     var next = document.getElementsByClassName(nextValue);
     current[0].className = currentId;
-    next[0].className = "current";    
+    next[0].className = "current"; 
+}
+
+function hover(element){
+    element.className = "hover";
+}
+
+function leave(element){
+    element.className = "leave";
 }

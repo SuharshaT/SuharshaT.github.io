@@ -13,25 +13,51 @@
         <header>
             <div class="navigation">
                 <nav>
-                    <a href="#" id="Contact" onclick="navigation(this)">Contact</a>
-                    <a href="#" id="Hobbies" onclick="navigation(this)">Hobbies</a>
-                    <a href="#" id="Bio" onclick="navigation(this)">Bio</a>
-                    <a href="#" id="Welcome" class="active" onclick="navigation(this)">Welcome</a>
+                    <a href="#contact" id="Contact" onclick="navigation(this)">Contact</a>
+                    <a href="#hobbies" id="Hobbies" onclick="navigation(this)">Hobbies</a>
+                    <a href="#about" id="About" onclick="navigation(this)">About</a>
+                    <a href="#welcome" id="Welcome" class="active" onclick="navigation(this)">Welcome</a>
                 </nav>
             </div>
         </header>
-        <div class="container">
-            <div class="current">
-                <br/><br/>
+        <div class="container" id="container">
+            <div class="current" id="start">
+                <figure>
+                    <a href="#"><img src="images/my-picture.jpg" alt="My Picture" id="mypicture" class="leave" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                </figure>
                 <h1>Hello, <br/> I'm Suharsha.</h1>
             </div>
-            <div class="Bio"> 
-                <br/><br/>          
-                <h1>Bio</h1>
+            <div class="About"> 
+                <h2>
+                    Experience
+                </h2>
+                <figure>
+                    <a href="#"><img src="images/hbots.jpg" alt="H-Bots Robotics" id="hbots" class="leave" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/skyfilabs.jpg" alt="H-Bots Robotics" id="skyfi" class="leave" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/fraunhofer.jpg" alt="H-Bots Robotics" id="fraunhofer" class="leave" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                </figure>
             </div>
             <div class="Hobbies">
-                <br/><br/>
-                <h1>Hobbies</h1>
+                <p>
+                    H-Bots Robotics<br/>
+                    Robotics Engineer<br/>
+                    August 2021 - Present<br/>
+                    Hyderabad, India<br/>
+                    Development and testing of Autonomous Mobile Robots using ROS<br>
+                    SLAM, path planning and navigation of AMRs<br>
+                    Integration of electronic components including sensors and motors.<br><br>
+                    
+                    Skyfi Labs<br>
+                    Academic Executive<br>
+                    February 2021 - July 2021 (6 months)<br>
+                    Bengaluru, Karnataka, India<br>
+                    Curriculum development for live training courses in Robotics, Coding and
+                    Drones.<br>
+                    Training students on Arduino and Raspberry Pi based Robotics.<br>
+                    Solving technical queries of students and trainers on Arduino and Raspberry
+                    Pi.<br>
+                    Trainer management and implementation of Teacher Training Strategy.<br>
+                </p>
             </div>
             <div class="Contact">
                 <br/><br/>
