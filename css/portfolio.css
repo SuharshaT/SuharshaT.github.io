@@ -3,6 +3,10 @@ body_{
     margin-top: 4vh;
 }
 
+.load{
+    visibility: hidden;
+}
+
 body{
     background: rgb(13,59,73);
     background-image: url("../images/background1.jpg");
@@ -12,23 +16,6 @@ body{
 
 header{
     margin-top: 4vh;
-}
-
-nav a_{
-    font-size: clamp(14px, 2.5vw, 18px);
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 400;
-    display: inline-block;
-    width: 70px;
-    text-align: center;  
-    text-decoration: none;
-    background: white;
-    color: rgb(15, 66, 82);
-    margin-left: 2vw;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    padding: 2vh 2vw 2vh 2vw;
-    border-radius: 3px;
 }
 
 nav a{
@@ -49,11 +36,6 @@ nav a{
 
 nav a:first-child{
     margin-right: 4.5vw;
-}
-
-.active_{
-    background: rgb(13, 59, 73);
-    color: white;
 }
 
 .active{

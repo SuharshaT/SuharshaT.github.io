@@ -10,6 +10,12 @@ function navigation(page){
     next[0].className = "current"; 
 }
 
+window.onload = unhide;
+
+function unhide(){
+    document.getElementsByTagName("body")[0].classList.remove("load");
+}
+
 function hover(element){
     element.className = "hover";
 }
