@@ -6,46 +6,60 @@
         <link rel="stylesheet" href="css/portfolio.css">
         <script src="js/portfolio.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/png" href="images/s.jpg">
         <title>Suharsha Thagaduru</title>
     </head>
     <body class="load">
         <header>
-            <div class="navigation">
-                <nav>
-                    <a href="#contact" id="Contact" onclick="navigation(this)">Contact</a>
-                    <a href="#hobbies" id="Hobbies" onclick="navigation(this)">Hobbies</a>
-                    <a href="#about" id="About" onclick="navigation(this)">About</a>
-                    <a href="#welcome" id="Welcome" class="active" onclick="navigation(this)">Welcome</a>
-                </nav>
+            <div id="navigation">
+                <a href="#home" id="Home" onclick="myFunction()"" onmouseover="hover(this)" onmouseleave="leave(this)">Welcome</a>
+                <div class="navigation" id="mylinks">
+                    <nav>
+                        <a href="#welcome" id="Welcome" class="active" onclick="navigation(this)" onmouseover="hover(this)" onmouseleave="leave(this)">Welcome</a>
+                        <a href="#about" id="About" onclick="navigation(this)" onmouseover="hover(this)" onmouseleave="leave(this)">About</a>
+                        <a href="#hobbies" id="Hobbies" onclick="navigation(this)" onmouseover="hover(this)" onmouseleave="leave(this)">Hobbies</a>
+                        <a href="#contact" id="Contact" onclick="navigation(this)" onmouseover="hover(this)" onmouseleave="leave(this)">Contact</a>
+                    </nav>
+                </div>
             </div>
         </header>
         <div class="container" id="container">
             <div class="current" id="start">
                 <figure>
-                    <a href="#"><img src="images/my-picture.jpg" alt="My Picture" id="mypicture" class="leave" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/my-picture.jpg" alt="My Picture" id="mypicture"  onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
                 </figure>
                 <h1>Hello, <br/> I'm Suharsha.</h1>
             </div>
             <div class="About"> 
                 <h2>
                     <a href="#Expereince" id="Experience" class="selected" onclick="change(this)">Experience</a>
+                </h2>
+                <h2>
                     <a href="#Education" id="Education" onclick="change(this)">Education</a>
                 </h2>
                 <figure class="visible">
-                    <a href="#"><img src="images/hbots.jpg" alt="H-Bots Robotics" id="hbots" class="leave" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
-                    <a href="#"><img src="images/skyfilabs.jpg" alt="H-Bots Robotics" id="skyfi" class="leave" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
-                    <a href="#"><img src="images/fraunhofer.jpg" alt="H-Bots Robotics" id="fraunhofer" class="leave" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/hbots.jpg" alt="H-Bots Robotics"  onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/skyfilabs.jpg" alt="Skyfi Labs" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/fraunhofer.jpg" alt="Fraunhofer" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
                 </figure>
                 <figure class="Education">
-                    <a href="#"><img src="images/eah.jpg" alt="EAH Jena" id="eah" class="leave" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
-                    <a href="#"><img src="images/vnr.jpg" alt="VNR VJIET" id="vnr" class="leave" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
-                    <a href="#"><img src="images/school.jpg" alt="SSSIHL" id="school" class="leave" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/eah.jpg" alt="EAH Jena"  onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/vnr.jpg" alt="VNR VJIET"  onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/school.jpg" alt="SSSIHL"  onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
                 </figure>
             </div>
             <div class="Hobbies">
-                <br/><br/>
-                <h2>Hobbies</h2>
+                <h2>
+                    <a href="#Photography" id="Photography">Photography</a>
+                </h2>
+                <figure>
+                    <a href="#"><img src="images/house.jpg" alt="House" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/road.jpg" alt="Road" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/puma.jpg" alt="Puma"  onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/mountain.jpg" alt="Mountain" onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                    <a href="#"><img src="images/track.jpg" alt="Track"  onmouseover="hover(this)" onmouseleave="leave(this)" onclick="select(this)"></a>
+                </figure>
             </div>
             <div class="Contact">
                 <br/><br/>

@@ -1,21 +1,9 @@
-body_{
-    background: rgb(24, 109, 121);
-    margin-top: 4vh;
-}
-
 .load{
     visibility: hidden;
 }
 
-body{
-    background: rgb(13,59,73);
-    background-image: url("../images/background1.jpg");
-    background-size: cover;
-    margin-top: 4vh;
-}
-
 header{
-    margin-top: 4vh;
+    margin-top: 2vh;
 }
 
 a{
@@ -23,49 +11,74 @@ a{
     color: white;
 }
 
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: rgb(13,59,73);
+    background-image: url("../images/background1.jpg");
+    background-size: cover;
+    margin-top: 2vh;
+}
+
+#navigation{
+    position: relative;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(13,59,73);
+}
+
+#mylinks{
+    display: none;
+}
+
+#icon{
+    background: rgb(13,59,73);
+    padding: 1.2% 1.2% 1.2% 1.2%;
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0.3%;
+}
+
 nav a{
     font-size: clamp(12px, 3vh, 18px);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
-    font-weight: 0;
-    float: right;
-    text-align: center;  
-    text-decoration: none;
-    color: rgb(3, 43, 61);
-    margin-right: 1vw;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    padding: 1vh 1vw 1vh 1vw;
-    border-radius: 3px;
-    opacity: 0.8;
-}
-
-nav a:first-child{
-    margin-right: 4.5vw;
-}
-
-h2 a{
-    opacity: 0.8;
-    transition: opacity 1s;
     font-weight: 100;
-    margin-right: 4vw;
+    display: block;
+    width: 100%;
+    text-align: left;  
+    text-decoration: none;
+    color: rgb(4, 56, 80);
+    background: white;
+    padding: 1vh 1vw 1vh 2vw;
+    opacity: 0.7;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+#Home{
+    font-size: clamp(12px, 3vh, 18px);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: 100;
+    display: block;
+    width: 100%;
+    text-align: left;  
+    text-decoration: none;
+    color: rgb(4, 56, 80);
+    background: white;
+    padding: 1vh 1vw 1vh 2vw;
+    opacity: 1;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
 }
 
 .active, .selected{
     opacity: 1;
     font-weight: 800;
-}
-
-.navigation{
-    text-align: center;
-    width: 90vw;
-    height: 94vh;
-    background: white;
-    background-image: url("../images/background1.png");
-    background-size: cover;
-    margin: 0 auto;
-    border-style:solid;
-    border-color: black;
-    border-width: 1.5px 1.5px 0px 1.5px;
 }
 
 @keyframes slide {
@@ -79,13 +92,11 @@ h2 a{
 }
 
 .container{
-    position: fixed;
     display: block;
     background: rgb(4, 56, 80);
-    top: 14vh;
-    left: 8vw;
-    width: 82vw;
-    height: 82vh;
+    width: 100%;
+    height: 100vh;
+    margin-top: 2vh;
     overflow: hidden;
     border-style: solid;
     border-color: black;
@@ -96,11 +107,11 @@ h2 a{
 .current{
     position: absolute;
     display: block;
-    width: 82vw;
-    height: 75vh;
+    width: 100%;
+    height: 100%;
     color: white;
     text-align: left;
-    font-size: clamp(15px, 6vh, 40px);
+    font-size: clamp(10px, 6vh, 18px);
     font-weight: 600;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     overflow: auto;
@@ -112,10 +123,6 @@ h2 a{
     display: block;
 }
 
-#start{
-    overflow: hidden;
-}
-
 .Welcome, .About, .Hobbies, .Contact, .Education, .Experience{
     display: none;
 }
@@ -123,13 +130,24 @@ h2 a{
 h1{
     margin-top: 4vh;
     margin-left: 8vw;
-    line-height: 14vh;
+    line-height: 12vh;
 }
 
 h2{
-    margin-top: 10vh;
-    margin-left: 8vw;
-    line-height: 16vh;
+    display: block;
+    margin-left: 10%;
+    line-height: 6vh;
+}
+
+#Photography{
+    opacity: 1;
+}
+
+h2 a{
+    opacity: 0.7;
+    transition: opacity 1s;
+    font-weight: 100;
+    margin-right: 4vw;
 }
 
 p{
@@ -138,22 +156,192 @@ p{
 }
 
 a img{
-    margin-left: 5vw;
+    display: block;
+    padding: 0% 2% 8% 2%;
+    width: 90%;
     transition: width 0.5s;
+    width: clamp(10px, 15vw, 140px);
 }
 
 #mypicture{
-    margin-top: 4vh;
-    transition: 0.7s;
+    margin-top: 4%;
+    margin-left: 0;
+    padding: 0%;
+    transition: 0.6s;
     border-radius: 50%;
 }
 
-.hover{
+.hoverImage{
     width: clamp(10px, 16vw, 160px);
 }
 
-.leave{
-    width: clamp(10px, 15vw, 140px);
+.hover{
+    background: rgb(129, 219, 247);
+}
+
+@media all and (min-width: 600px) {
+    header{
+        margin-top: 4vh;
+    }
+    
+    body{
+        background: rgb(13,59,73);
+        background-image: url("../images/background1.jpg");
+        background-size: cover;
+        margin-top: 4vh;
+    }
+
+    #Home{
+        display: none;
+    }
+
+    #navigation{
+        border: none;
+        display: fixed
+    }
+
+    .navigation{
+        text-align: center;
+        width: 96vw;
+        height: 94vh;
+        background: white;
+        background-image: url("../images/background1.png");
+        background-size: cover;
+        margin: 0 auto;
+        border-style:solid;
+        border-color: black;
+        border-width: 1.5px 1.5px 0px 1.5px;
+    }
+
+    #mylinks{
+        display: block;
+    }
+    
+    nav a{
+        font-size: clamp(12px, 3vh, 18px);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-weight: 0;
+        float: right;
+        width: fit-content;
+        border-color: white;
+        text-align: center;  
+        text-decoration: none;
+        color: rgb(3, 43, 61);
+        margin-right: 1vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        padding: 1vh 1vw 1vh 1vw;
+        border-radius: 3px;
+        opacity: 0.8;
+    }
+    
+    nav a:first-child{
+        margin-right: 4.5vw;
+    }
+    
+    h2 a{
+        opacity: 0.7;
+        transition: opacity 1s;
+        font-weight: 100;
+        margin-right: 4vw;
+    }
+    
+    .active, .selected{
+        opacity: 1;
+        font-weight: 800;
+    }
+    
+    @keyframes slide {
+        from{
+            margin-left: 100%;
+        }
+    
+        to{
+            margin-right: 100%;
+        }
+    }
+    
+    .container{
+        position: fixed;
+        display: block;
+        background: rgb(4, 56, 80);
+        top: 12vh;
+        left: 6vw;
+        width: 86vw;
+        height: 82vh;
+        overflow: hidden;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px 1px 0px 1px;
+    
+    }
+    
+    .current{
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: white;
+        text-align: left;
+        font-size: clamp(15px, 6vh, 40px);
+        font-weight: 600;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        overflow: auto;
+        animation-name: slide;
+        animation-duration: 2s;
+    }
+    
+    .visible{
+        display: block;
+    }
+    
+    #start{
+        overflow: hidden;
+    }
+    
+    .Welcome, .About, .Hobbies, .Contact, .Education, .Experience{
+        display: none;
+    }
+    
+    h1{
+        margin-top: 4vh;
+        margin-left: 8vw;
+        line-height: 14vh;
+    }
+    
+    h2{
+        display: inline-block;
+        margin-top: 10vh;
+        margin-left: 8vw;
+        line-height: 16vh;
+        opacity: 1;
+    }
+    
+    p{
+        margin-left: 6vw;
+        font-size: clamp(12px, 3vh, 18px);
+    }
+    
+    a img{
+        display: inline-block;
+        margin-left: 5vw;
+        transition: width 0.5s;
+    }
+    
+    #mypicture{
+        margin-top: 4vh;
+        margin-left: 4vw;
+        transition: 0.7s;
+        border-radius: 50%;
+    }
+    
+    .hover{
+        background: rgb(129, 219, 247);
+    }
+    
+    .hoverImage{
+        width: clamp(10px, 16vw, 160px);
+    }       
 }
 
 
